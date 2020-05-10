@@ -6,7 +6,6 @@ modules{
 	EXPORT_SYMBOL()
 	EXPORT_SYMBOL_GPL()
 	The exported symbols and other functions in the kernel can be seen in the /proc/kallsyms file.
-
 	struct proc_dir_entry
 	struct file_operations
 	struct file
@@ -20,13 +19,14 @@ mm{
 	"memory subsystem overview"..from notes
 	Memory manager high-level "mm" code in usr/src/linux/mm is processor independent
 	Memory initializer low-level is arch dependent in usr/src/linux/arch/<arch>/mm
-		Executes at boot stage and responsible for following actions:
-			1. Initialization of MMU (paging)
-			2. Enumeration of page descriptors list that contain descriptors which represent frames
-			3. Initialization of page frame table for info of page to frame mappings
-			4. Categorization of page descriptors into appropriate zones as per applicable zone policy
-			5. Initialization of memory allocator (Buddy system)
-
+		{
+			Executes at boot stage and responsible for following actions:
+				1. Initialization of MMU (paging)
+				2. Enumeration of page descriptors list that contain descriptors which represent frames
+				3. Initialization of page frame table for info of page to frame mappings
+				4. Categorization of page descriptors into appropriate zones as per applicable zone policy
+				5. Initialization of memory allocator (Buddy system)
+			}
 	 
 }
 libs{
