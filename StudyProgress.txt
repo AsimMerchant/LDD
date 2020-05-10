@@ -1,0 +1,104 @@
+APIs I have come across.
+modules{
+	Chapter 2 https://www.oreilly.com/openbook/linuxdrive3/book/
+	__symbol_get()
+	__symbol_put()
+	EXPORT_SYMBOL()
+	EXPORT_SYMBOL_GPL()
+	struct proc_dir_entry
+	struct file_operations
+	struct file
+	struct task_struct
+	struct thread_info
+	struct mm_struct
+	current //is a macro 
+	current_thread_info()
+}
+mm{
+	
+}
+libs{
+	[concept]static libs (archives; libtest.a...)
+	Symbols{
+		GLOBAL_OFFSET_TABLE
+		TEXTREL
+		DT_NEEDED/NEEDED
+		SONAME
+	}
+}
+
+memalloc{
+	part1{
+		dl_open [notes]
+		alloca 
+		memcpy and memmove [notes]
+		getrlimit* (rlimit) | setrlimit*
+	}
+	part2{
+		brk and sbrk *restoring the old program break caused segfault {why?}*
+	}
+	part3{
+		mmap | munmap
+		sysconf*
+	} 
+	part4{
+		
+	}
+	part5{
+	
+	}
+}
+startup{
+	faqs{
+		1. what does "compile & build" mean ?
+		2. What is an object file ?
+		3. what operations does build process involve ?
+		4. which tool carry's out build process ?
+		5. what is the composition of an "executable object file" ?
+		6. what is Application Binary interface standard ? why is it needed ?
+		7. what is significance of Runtime(startup)  instructions in an executable object file ?
+	}
+	
+}
+
+Questions:
+	What happens during the build phase?
+	start init fini etc calls
+	Procedeure | Instruction relocation
+	Bootstrap, what is this?
+	ABI (which runtime std and which format)
+	Dynamically linked vs statically linked **
+		- Runtime linking?
+	System calls vs Function calls
+	Heap management
+	Re-entrant code?
+	
+Projects
+	ncurses (make shisui sharingan in the terminal)
+	connect4 or similar 
+	Comp-coding (solve 1 everyday)
+		{
+			Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+				You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+				Example:
+
+				Given nums = [2, 7, 11, 15], target = 9,
+
+				Because nums[0] + nums[1] = 2 + 7 = 9,
+				return [0, 1].
+				
+				/**
+				 * Note: The returned array must be malloced, assume caller calls free().
+				 */
+				int* twoSum(int* nums, int numsSize, int target, int* returnSize){
+
+				}
+		}
+	Framework to deliver In-field updates for VM (git/bitbucket)
+	Advanced C-algorithms (learn 1 everyday)
+	Check-in and check-out interface for files on server (probably on SVN/git)
+	
+Take a look
+	Troff vs TeX
