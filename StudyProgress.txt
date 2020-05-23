@@ -26,8 +26,14 @@ mm{
 			3. Initialization of page frame table for info of page to frame mappings
 			4. Categorization of page descriptors into appropriate zones as per applicable zone policy
 			5. Initialization of memory allocator (Buddy system)
-
-	 
+	geeksforgeeks links
+	LDD chapter 15 
+	struct page
+	PAGE_SHIFT
+	PAGE_OFFSET
+	PAGE_MASK
+	PAGE_MASK
+		 
 }
 libs{
 	[concept]static libs (archives; libtest.a...)
