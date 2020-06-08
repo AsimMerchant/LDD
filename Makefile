@@ -1,7 +1,8 @@
 #obj-m += hello.o
 #obj-m += hello1.o
-obj-m += newprochello.o
+#obj-m += newprochello.o
 #obj-m += testproc.o
+obj-m += structsmm.o
 
 KDIR=/lib/modules/$(shell uname -r)/build
 

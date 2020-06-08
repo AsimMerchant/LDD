@@ -33,6 +33,8 @@ mm{
 	PAGE_OFFSET
 	PAGE_MASK
 	PAGE_MASK
+	get_num_physpages()
+	
 		 
 }
 libs{
