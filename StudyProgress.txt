@@ -34,8 +34,7 @@ mm{
 	PAGE_MASK
 	PAGE_MASK
 	get_num_physpages()
-	
-		 
+	__pa(x) = x-PAGE_OFFSET	
 }
 libs{
 	[concept]static libs (archives; libtest.a...)
