@@ -29,12 +29,13 @@ mm{
 	geeksforgeeks links
 	LDD chapter 15 
 	struct page
-	PAGE_SHIFT
+	PAGE_SHIFT is number of times to shift left to get PAGE_SIZE
 	PAGE_OFFSET
-	PAGE_MASK
+	PAGE_SIZE
 	PAGE_MASK
 	get_num_physpages()
 	__pa(x) = x-PAGE_OFFSET	
+	
 }
 libs{
 	[concept]static libs (archives; libtest.a...)
