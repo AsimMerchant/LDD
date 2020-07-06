@@ -34,7 +34,13 @@ mm{
 	PAGE_SIZE
 	PAGE_MASK
 	get_num_physpages()
-	__pa(x) = x-PAGE_OFFSET	
+	__pa(x) = x-PAGE_OFFSET
+	more macros{
+		PMD_SHIFT|SIZE|MASK Area an entry of PMD can map (Page middle directory)
+		PUD_<same> Area an entry of PUD can map (Page upper directory)
+		PGDIR_<same> Area an entry of PGD can map (page global directory)
+		PTRS_PER_PTE|PMD|PUD|PGD = 1024|1|1|1024 ; if PAE enabled 512|512|1|4 respectively
+	}
 	
 }
 libs{
