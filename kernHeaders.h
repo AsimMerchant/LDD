@@ -9,3 +9,7 @@
 #include <linux/uaccess.h>
 #include<linux/printk.h>
 #include<linux/mm.h>
+//Added 11/9/2020
+#include <linux/kdev_t.h>
+#include <linux/fs.h>
+#include<linux/cdev.h>
